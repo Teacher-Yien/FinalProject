@@ -35,7 +35,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -57,7 +56,8 @@
             this.cboPaidMethod = new System.Windows.Forms.ComboBox();
             this.cboPaidType = new System.Windows.Forms.ComboBox();
             this.cboSemester = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtStuName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -108,7 +108,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 365);
+            this.label6.Location = new System.Drawing.Point(12, 422);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(156, 36);
             this.label6.TabIndex = 5;
@@ -117,20 +117,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 439);
+            this.label7.Location = new System.Drawing.Point(12, 496);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 36);
             this.label7.TabIndex = 6;
             this.label7.Text = "តួនាទីបុគ្គលិក:";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(505, 35);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(114, 50);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.Text = "ស្វែងរក";
-            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -170,7 +161,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(17, 512);
+            this.btnInsert.Location = new System.Drawing.Point(18, 564);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(172, 47);
             this.btnInsert.TabIndex = 12;
@@ -179,7 +170,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(249, 512);
+            this.btnUpdate.Location = new System.Drawing.Point(249, 564);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(137, 37);
             this.btnUpdate.TabIndex = 13;
@@ -188,7 +179,7 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(464, 512);
+            this.btnNew.Location = new System.Drawing.Point(460, 564);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(114, 47);
             this.btnNew.TabIndex = 14;
@@ -197,7 +188,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(655, 512);
+            this.btnLogOut.Location = new System.Drawing.Point(655, 564);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(114, 47);
             this.btnLogOut.TabIndex = 15;
@@ -234,14 +225,14 @@
             // 
             // txtStaffID
             // 
-            this.txtStaffID.Location = new System.Drawing.Point(174, 357);
+            this.txtStaffID.Location = new System.Drawing.Point(174, 414);
             this.txtStaffID.Name = "txtStaffID";
             this.txtStaffID.Size = new System.Drawing.Size(301, 44);
             this.txtStaffID.TabIndex = 21;
             // 
             // txtStaffPosition
             // 
-            this.txtStaffPosition.Location = new System.Drawing.Point(174, 431);
+            this.txtStaffPosition.Location = new System.Drawing.Point(171, 477);
             this.txtStaffPosition.Name = "txtStaffPosition";
             this.txtStaffPosition.Size = new System.Drawing.Size(568, 44);
             this.txtStaffPosition.TabIndex = 22;
@@ -302,19 +293,29 @@
             this.cboSemester.Size = new System.Drawing.Size(177, 44);
             this.cboSemester.TabIndex = 29;
             // 
-            // textBox1
+            // label13
             // 
-            this.textBox1.Location = new System.Drawing.Point(655, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 44);
-            this.textBox1.TabIndex = 30;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(12, 362);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(127, 36);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "ឈ្មោះនិស្សិត៖";
+            // 
+            // txtStuName
+            // 
+            this.txtStuName.Location = new System.Drawing.Point(174, 354);
+            this.txtStuName.Name = "txtStuName";
+            this.txtStuName.Size = new System.Drawing.Size(301, 44);
+            this.txtStuName.TabIndex = 32;
             // 
             // Payments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 632);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1133, 709);
+            this.Controls.Add(this.txtStuName);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.cboSemester);
             this.Controls.Add(this.cboPaidType);
             this.Controls.Add(this.cboPaidMethod);
@@ -336,7 +337,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -363,7 +363,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -385,6 +384,7 @@
         private System.Windows.Forms.ComboBox cboPaidMethod;
         private System.Windows.Forms.ComboBox cboPaidType;
         private System.Windows.Forms.ComboBox cboSemester;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.TextBox txtStuName;
 	}
 }

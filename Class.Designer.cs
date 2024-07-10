@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tbClass = new System.Windows.Forms.DataGridView();
-            this.Session = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +47,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btn_up_Calss = new System.Windows.Forms.Button();
-            this.btn_Add_new_Class = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbClass)).BeginInit();
             this.SuspendLayout();
@@ -94,7 +92,6 @@
             this.tbClass.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tbClass.ColumnHeadersHeight = 40;
             this.tbClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Session,
             this.fullName,
             this.StudentID,
             this.StudentName,
@@ -103,37 +100,30 @@
             this.phone,
             this.occuption,
             this.classes});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Khmer OS", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tbClass.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Khmer OS", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbClass.DefaultCellStyle = dataGridViewCellStyle3;
             this.tbClass.Location = new System.Drawing.Point(4, 214);
             this.tbClass.Name = "tbClass";
             this.tbClass.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Khmer SN Kampot", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tbClass.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Khmer SN Kampot", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbClass.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.tbClass.RowHeadersWidth = 51;
             this.tbClass.RowTemplate.Height = 24;
             this.tbClass.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tbClass.Size = new System.Drawing.Size(1244, 398);
             this.tbClass.TabIndex = 5;
-            // 
-            // Session
-            // 
-            this.Session.FillWeight = 50F;
-            this.Session.HeaderText = "ជំនាន់";
-            this.Session.MinimumWidth = 6;
-            this.Session.Name = "Session";
             // 
             // fullName
             // 
@@ -206,7 +196,7 @@
             this.button4.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::Shcool_management.Properties.Resources.printer;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(584, 130);
+            this.button4.Location = new System.Drawing.Point(496, 130);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(154, 52);
             this.button4.TabIndex = 4;
@@ -218,7 +208,7 @@
             this.button3.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::Shcool_management.Properties.Resources.delete;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(396, 130);
+            this.button3.Location = new System.Drawing.Point(267, 130);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(154, 52);
             this.button3.TabIndex = 3;
@@ -230,26 +220,13 @@
             this.btn_up_Calss.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_up_Calss.Image = global::Shcool_management.Properties.Resources.system_update;
             this.btn_up_Calss.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_up_Calss.Location = new System.Drawing.Point(213, 130);
+            this.btn_up_Calss.Location = new System.Drawing.Point(46, 130);
             this.btn_up_Calss.Name = "btn_up_Calss";
             this.btn_up_Calss.Size = new System.Drawing.Size(177, 52);
             this.btn_up_Calss.TabIndex = 2;
             this.btn_up_Calss.Text = "    កែប្រែថ្នាក់ថ្មី";
             this.btn_up_Calss.UseVisualStyleBackColor = true;
             this.btn_up_Calss.Click += new System.EventHandler(this.btn_up_Calss_Click);
-            // 
-            // btn_Add_new_Class
-            // 
-            this.btn_Add_new_Class.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add_new_Class.Image = global::Shcool_management.Properties.Resources.training;
-            this.btn_Add_new_Class.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Add_new_Class.Location = new System.Drawing.Point(12, 130);
-            this.btn_Add_new_Class.Name = "btn_Add_new_Class";
-            this.btn_Add_new_Class.Size = new System.Drawing.Size(176, 52);
-            this.btn_Add_new_Class.TabIndex = 1;
-            this.btn_Add_new_Class.Text = "    បន្តែមថ្នាក់ថ្មី";
-            this.btn_Add_new_Class.UseVisualStyleBackColor = true;
-            this.btn_Add_new_Class.Click += new System.EventHandler(this.btn_Add_new_Class_Click);
             // 
             // Class
             // 
@@ -262,9 +239,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_up_Calss);
-            this.Controls.Add(this.btn_Add_new_Class);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Class";
             this.Text = "Class";
             this.panel1.ResumeLayout(false);
@@ -279,22 +254,20 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Add_new_Class;
         private System.Windows.Forms.Button btn_up_Calss;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView tbClass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Session;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fullName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn occuption;
-        private System.Windows.Forms.DataGridViewTextBoxColumn classes;
         private System.Windows.Forms.Button btn_exit;
-    }
+		private System.Windows.Forms.DataGridViewTextBoxColumn fullName;
+		private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
+		private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
+		private System.Windows.Forms.DataGridViewTextBoxColumn gender;
+		private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
+		private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+		private System.Windows.Forms.DataGridViewTextBoxColumn occuption;
+		private System.Windows.Forms.DataGridViewTextBoxColumn classes;
+	}
 }

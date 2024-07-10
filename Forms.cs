@@ -123,6 +123,9 @@ namespace Shcool_management
 			this.Dispose();
 		}
 
-		
+		private void Btninvoice_Click(object sender, EventArgs e)
+		{
+			openChildForm(new Invoice());
+		}
 	}
 }

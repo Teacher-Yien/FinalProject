@@ -594,6 +594,7 @@ public static byte[] ResizeImage(string imagePath, int maxWidth, int maxHeight)
 			}
 		}
 
+		
 
 
 

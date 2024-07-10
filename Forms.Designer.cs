@@ -32,25 +32,25 @@
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.panelHomeSubMenu = new System.Windows.Forms.Panel();
+            this.panelAtandentSumMenu = new System.Windows.Forms.Panel();
+            this.panelPaymentSubMenu = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btn_Atandent = new System.Windows.Forms.Button();
-            this.panelAtandentSumMenu = new System.Windows.Forms.Panel();
             this.btnStaff = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnStudents = new System.Windows.Forms.Button();
             this.btn_pay = new System.Windows.Forms.Button();
-            this.panelPaymentSubMenu = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.Btninvoice = new System.Windows.Forms.Button();
             this.btn_sub_payments = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.logout = new System.Windows.Forms.Button();
-            this.panelChildForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelHomeSubMenu.SuspendLayout();
             this.panelAtandentSumMenu.SuspendLayout();
@@ -85,6 +85,74 @@
             this.panel1.Size = new System.Drawing.Size(270, 157);
             this.panel1.TabIndex = 0;
             // 
+            // panelHomeSubMenu
+            // 
+            this.panelHomeSubMenu.Controls.Add(this.btnUser);
+            this.panelHomeSubMenu.Location = new System.Drawing.Point(3, 231);
+            this.panelHomeSubMenu.Name = "panelHomeSubMenu";
+            this.panelHomeSubMenu.Size = new System.Drawing.Size(267, 57);
+            this.panelHomeSubMenu.TabIndex = 2;
+            // 
+            // panelAtandentSumMenu
+            // 
+            this.panelAtandentSumMenu.Controls.Add(this.btnStaff);
+            this.panelAtandentSumMenu.Controls.Add(this.button1);
+            this.panelAtandentSumMenu.Controls.Add(this.btnStudents);
+            this.panelAtandentSumMenu.Location = new System.Drawing.Point(3, 359);
+            this.panelAtandentSumMenu.Name = "panelAtandentSumMenu";
+            this.panelAtandentSumMenu.Size = new System.Drawing.Size(267, 166);
+            this.panelAtandentSumMenu.TabIndex = 1;
+            // 
+            // panelPaymentSubMenu
+            // 
+            this.panelPaymentSubMenu.Controls.Add(this.button8);
+            this.panelPaymentSubMenu.Controls.Add(this.Btninvoice);
+            this.panelPaymentSubMenu.Controls.Add(this.btn_sub_payments);
+            this.panelPaymentSubMenu.Location = new System.Drawing.Point(3, 596);
+            this.panelPaymentSubMenu.Name = "panelPaymentSubMenu";
+            this.panelPaymentSubMenu.Size = new System.Drawing.Size(267, 170);
+            this.panelPaymentSubMenu.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.logout);
+            this.panel2.Location = new System.Drawing.Point(3, 837);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(282, 170);
+            this.panel2.TabIndex = 4;
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.AutoScroll = true;
+            this.panelChildForm.AutoSize = true;
+            this.panelChildForm.BackColor = System.Drawing.Color.White;
+            this.panelChildForm.Controls.Add(this.label1);
+            this.panelChildForm.Controls.Add(this.pictureBox1);
+            this.panelChildForm.Location = new System.Drawing.Point(305, 1);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(1607, 1042);
+            this.panelChildForm.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Khmer OS", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(413, 444);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(783, 100);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ប្រព័ន្ធគ្រប់គ្រង់ការបង់ប្រាក់និស្សិត";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Shcool_management.Properties.Resources.logo_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(522, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(513, 399);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.Black;
@@ -102,14 +170,6 @@
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // panelHomeSubMenu
-            // 
-            this.panelHomeSubMenu.Controls.Add(this.btnUser);
-            this.panelHomeSubMenu.Location = new System.Drawing.Point(3, 231);
-            this.panelHomeSubMenu.Name = "panelHomeSubMenu";
-            this.panelHomeSubMenu.Size = new System.Drawing.Size(267, 57);
-            this.panelHomeSubMenu.TabIndex = 2;
             // 
             // btnUser
             // 
@@ -146,16 +206,6 @@
             this.btn_Atandent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Atandent.UseVisualStyleBackColor = false;
             this.btn_Atandent.Click += new System.EventHandler(this.btn_Atandent_Click);
-            // 
-            // panelAtandentSumMenu
-            // 
-            this.panelAtandentSumMenu.Controls.Add(this.btnStaff);
-            this.panelAtandentSumMenu.Controls.Add(this.button1);
-            this.panelAtandentSumMenu.Controls.Add(this.btnStudents);
-            this.panelAtandentSumMenu.Location = new System.Drawing.Point(3, 359);
-            this.panelAtandentSumMenu.Name = "panelAtandentSumMenu";
-            this.panelAtandentSumMenu.Size = new System.Drawing.Size(267, 166);
-            this.panelAtandentSumMenu.TabIndex = 1;
             // 
             // btnStaff
             // 
@@ -229,16 +279,6 @@
             this.btn_pay.UseVisualStyleBackColor = false;
             this.btn_pay.Click += new System.EventHandler(this.btn_pay_Click);
             // 
-            // panelPaymentSubMenu
-            // 
-            this.panelPaymentSubMenu.Controls.Add(this.button8);
-            this.panelPaymentSubMenu.Controls.Add(this.button9);
-            this.panelPaymentSubMenu.Controls.Add(this.btn_sub_payments);
-            this.panelPaymentSubMenu.Location = new System.Drawing.Point(3, 596);
-            this.panelPaymentSubMenu.Name = "panelPaymentSubMenu";
-            this.panelPaymentSubMenu.Size = new System.Drawing.Size(267, 170);
-            this.panelPaymentSubMenu.TabIndex = 3;
-            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Black;
@@ -256,22 +296,23 @@
             this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // Btninvoice
             // 
-            this.button9.BackColor = System.Drawing.Color.Black;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Khmer SN Kampot", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = global::Shcool_management.Properties.Resources.house;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button9.Location = new System.Drawing.Point(50, 58);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(193, 49);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Home";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.UseVisualStyleBackColor = false;
+            this.Btninvoice.BackColor = System.Drawing.Color.Black;
+            this.Btninvoice.FlatAppearance.BorderSize = 0;
+            this.Btninvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btninvoice.Font = new System.Drawing.Font("Khmer SN Kampot", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btninvoice.ForeColor = System.Drawing.Color.White;
+            this.Btninvoice.Image = global::Shcool_management.Properties.Resources.invoice;
+            this.Btninvoice.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Btninvoice.Location = new System.Drawing.Point(50, 58);
+            this.Btninvoice.Name = "Btninvoice";
+            this.Btninvoice.Size = new System.Drawing.Size(193, 49);
+            this.Btninvoice.TabIndex = 3;
+            this.Btninvoice.Text = "វិក័យប័ត្រ";
+            this.Btninvoice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btninvoice.UseVisualStyleBackColor = false;
+            this.Btninvoice.Click += new System.EventHandler(this.Btninvoice_Click);
             // 
             // btn_sub_payments
             // 
@@ -309,14 +350,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.logout);
-            this.panel2.Location = new System.Drawing.Point(3, 837);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(282, 170);
-            this.panel2.TabIndex = 4;
-            // 
             // logout
             // 
             this.logout.BackColor = System.Drawing.Color.Black;
@@ -333,38 +366,6 @@
             this.logout.Text = "     ចាកចេញពីប្រព័ន្ធ";
             this.logout.UseVisualStyleBackColor = false;
             this.logout.Click += new System.EventHandler(this.logout_Click);
-            // 
-            // panelChildForm
-            // 
-            this.panelChildForm.AutoScroll = true;
-            this.panelChildForm.AutoSize = true;
-            this.panelChildForm.BackColor = System.Drawing.Color.White;
-            this.panelChildForm.Controls.Add(this.label1);
-            this.panelChildForm.Controls.Add(this.pictureBox1);
-            this.panelChildForm.Location = new System.Drawing.Point(305, 1);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1607, 1042);
-            this.panelChildForm.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Khmer OS", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(413, 444);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(783, 100);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ប្រព័ន្ធគ្រប់គ្រង់ការបង់ប្រាក់និស្សិត";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Shcool_management.Properties.Resources.logo_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(522, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(513, 399);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // School
             // 
@@ -409,7 +410,7 @@
         public global::System.Windows.Forms.Button btn_Atandent;
         private global::System.Windows.Forms.Panel panelPaymentSubMenu;
         private global::System.Windows.Forms.Button button8;
-        private global::System.Windows.Forms.Button button9;
+        private global::System.Windows.Forms.Button Btninvoice;
         private global::System.Windows.Forms.Button btn_sub_payments;
         public global::System.Windows.Forms.Button btn_pay;
         private global::System.Windows.Forms.Panel panelChildForm;
